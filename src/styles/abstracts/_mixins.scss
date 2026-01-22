@@ -1,0 +1,18 @@
+@use '../abstracts/variables' as *;
+
+/* Mixins */
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin button {
+  display: inline-block;
+  background-color: $blue;
+  color: white !important;
+  padding: 0.9rem 1.8rem;
+  border-radius: 2.5rem;
+  font-weight: 400;
+  text-decoration: none;
+}

@@ -1,0 +1,61 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as *;
+
+/* Header */
+.header {
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+    a {
+        display: flex;
+        align-items: center;
+        color: $blue;
+    }
+}
+
+.nav-principal ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    @include reset-list();
+    
+    a {
+        text-decoration: none;
+        font-size: 0.8rem;
+        cursor: pointer;
+    }
+    
+    :last-child {
+        display: flex;
+        align-items: center;
+    }
+
+    
+}
+
+.header__aside {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    @include reset-list();
+    
+    a {
+        text-decoration: none;
+        font-size: 0.8rem;
+        cursor: pointer;
+    }
+    
+    &-icons {
+        display: flex;
+        gap: 1rem;
+    }
+
+    &-login {
+        display: flex;
+        gap: 1rem;
+    }
+}
