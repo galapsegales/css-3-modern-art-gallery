@@ -36,14 +36,22 @@
             gap: 2rem;
             align-items: center;
             padding-bottom: 2rem;
+            position: relative;
+            z-index: 100;
 
 
             &_watch {
+                position: relative;
+                z-index: 100;
                 display: flex;
                 gap: 1rem;
                 align-items: center;
                 text-decoration: none;
                 color: $blue;
+                transition: transform 0.3s ease; 
+                &:hover {
+                transform: scale(1.1); 
+                }
                 .play-text {
                     text-decoration: none;
                     font-style: normal;
