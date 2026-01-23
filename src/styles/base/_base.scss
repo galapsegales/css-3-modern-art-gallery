@@ -1,14 +1,13 @@
 @use '../abstracts/variables' as *;
 /* Base styles */
 * {
-    font-size: 14px;
+    font-size: 16px;
     font-family: $font-stack;
     
 }
 
 body {
     overflow-x: hidden;
-    font-size: 14px;
 }
 
 img {
