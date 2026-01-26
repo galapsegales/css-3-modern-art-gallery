@@ -1,9 +1,9 @@
 @use '../abstracts/variables' as *;
 /* Base styles */
 * {
-    font-size: 14px;
+    font-size: 16px;
     font-family: $font-primary;
-    
+    color: $black;
 }
 
 body {

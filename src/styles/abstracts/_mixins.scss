@@ -7,4 +7,60 @@
   list-style: none;
 }
 
+/* BREAKPOINTS */
+
+@mixin breakpoint($bp) {
+  @if $bp == tablet {
+    @media (min-width: $bp-tablet) {
+      @content;
+    }
+  }
+
+  @if $bp == tablethorizontal {
+    @media (min-width: $bp-tablet-horizontal) {
+      @content;
+    }
+  }
+
+  @if $bp == desktop {
+    @media (min-width: $bp-desktop) {
+      @content;
+    }
+  }
+
+  @if $bp == desktopxl {
+    @media (min-width: $bp-desktop-xl) {
+      @content;
+    }
+  }
+}
+
+/* BUTTON BASE */
+@mixin button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  background-color: $black;
+  color: $white;
+  font-size: 1.5rem;
+  padding: 1.5rem 2rem;
+  padding-right: 5.2rem;
+  font-weight: 700;
+  text-decoration: none;
+  line-height: normal;
+  letter-spacing: 0.23rem;
+  text-transform: uppercase;
+}
+
+@mixin button--arrow {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  background-color: $brown;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
 
