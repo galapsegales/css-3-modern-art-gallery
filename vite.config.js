@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: '/sass-vite-template-2026/', 
+  base: '/css-3-modern-art-gallery/', 
 })
 
