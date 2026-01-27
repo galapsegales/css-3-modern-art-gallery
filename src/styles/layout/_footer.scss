@@ -1,1 +1,45 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as *;
+
 /* Footer */
+
+.footer {
+    background-color: $black;
+    min-width: 100dvw;
+    max-width: 100dvw;
+
+    &__container {
+        padding: 3rem 2.2rem;
+
+        &--title {
+            color: $white;
+            font-size: 1.5rem;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 1.4rem;
+            text-transform: uppercase;
+        }
+
+        &--subtitle {
+            padding: 2.5rem 0;
+            color: $white;
+            font-family: $font-secondary;
+            font-size: 1.1rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.75rem;
+        }
+
+        &_social {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+
+            &--img {
+                width: 1.5rem;
+                height: 1.5rem;
+            }
+        }
+    }
+}
+
