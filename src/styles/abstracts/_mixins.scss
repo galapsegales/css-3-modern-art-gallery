@@ -64,3 +64,23 @@
   padding: 1.5rem;
 }
 
+/* BUTTON REVERSE */
+
+@mixin button-rev {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  background-color: $black;
+  color: $white;
+  font-size: 1.5rem;
+  padding: 1.5rem 2rem;
+  padding-left: 5.2rem;
+  font-weight: 700;
+  text-decoration: none;
+  line-height: normal;
+  letter-spacing: 0.23rem;
+  text-transform: uppercase;
+}
+
+
+
