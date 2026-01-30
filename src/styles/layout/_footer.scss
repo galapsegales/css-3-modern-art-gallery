@@ -1,7 +1,7 @@
 @use '../abstracts/mixins' as *;
 @use '../abstracts/variables' as *;
 
-/* Footer */
+/* Footer Location */
 
 .footerloc {
     background-color: $brown;
@@ -10,6 +10,7 @@
 
     &__container {
         padding: 3rem 2.2rem;
+        color: $black;
 
         &--title {
             color: $black;
@@ -28,6 +29,7 @@
             font-style: normal;
             font-weight: 400;
             line-height: 1.75rem;
+            color: inherit;
         }
 
         &_social {
@@ -43,7 +45,7 @@
     }   
 }
 
-/* Location Footer */
+/* Footer */
 
 .footer {
     background-color: $black;
@@ -85,5 +87,15 @@
             }
         }
     }    
+}
+
+.footer-maps {
+    color: inherit;
+    font-family: $font-secondary;
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.75rem;
+    text-decoration: none;
 }
 
