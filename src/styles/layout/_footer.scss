@@ -52,6 +52,7 @@
 
     &__container {
         padding: 3rem 2.2rem;
+        color: $white;
 
         &--title {
             color: $white;
@@ -70,6 +71,7 @@
             font-style: normal;
             font-weight: 400;
             line-height: 1.75rem;
+            color: inherit;
         }
 
         &_social {
