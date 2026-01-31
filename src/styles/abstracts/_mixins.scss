@@ -82,7 +82,7 @@
   text-transform: uppercase;
 }
 
-/* HERO IMAGE SWITCHER */
+/* HEADER IMAGE SWITCHER */
 
 @mixin hero-switcher($base-path) {
   
@@ -101,5 +101,22 @@
   }
 }
 
+/* HERO GALLERY IMAGE SWITCHER */
 
+@mixin gallery-switcher($base-path) {
+  
+  background-image: url("#{$base-path}-m.png");
+  background-size: cover;
+  background-position: center;
+
+  // Tablet
+  @include breakpoint(tablet) {
+    background-image: url("#{$base-path}-tablet.png");
+  }
+
+  // Desktop
+  @include breakpoint(desktop) {
+    background-image: url("#{$base-path}-desktop.png");
+  }
+}
 
