@@ -5,12 +5,24 @@
 
 .footerloc {
     background-color: $brown;
-    min-width: 100dvw;
-    max-width: 100dvw;
+    max-width: $bp-desktop-xl;
+    margin-left: auto;
+    margin-right: auto;
 
     &__container {
         padding: 3rem 2.2rem;
         color: $black;
+
+        @include breakpoint(tablet) {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            padding: 3.5rem 2.5rem;
+        }
+
+        @include breakpoint(desktop) {
+            padding-left: 9rem;
+            padding-right: 9rem;
+        }
 
         &--title {
             color: $black;
@@ -30,12 +42,31 @@
             font-weight: 400;
             line-height: 1.75rem;
             color: inherit;
+
+            @include breakpoint(tablet) {
+                padding: 0;
+                padding-right: 3rem;
+            }
+
+            @include breakpoint(desktop) {
+                padding: 0;
+                padding-right: 6rem;
+            }
         }
 
         &_social {
             display: flex;
             align-items: center;
             gap: 1.5rem;
+
+            @include breakpoint(tablet) {
+                align-items: flex-start;
+                justify-content: center;
+            }
+
+            @include breakpoint(tablet) {
+                justify-content: flex-end;
+            }
 
             &--img {
                 width: 1.5rem;
@@ -49,12 +80,24 @@
 
 .footer {
     background-color: $black;
-    min-width: 100dvw;
-    max-width: 100dvw;
+    max-width: $bp-desktop-xl;
+    margin-left: auto;
+    margin-right: auto;
 
     &__container {
         padding: 3rem 2.2rem;
         color: $white;
+
+        @include breakpoint(tablet) {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            padding: 3.5rem 2.5rem;
+        }
+
+        @include breakpoint(desktop) {
+            padding-left: 8rem;
+            padding-right: 8rem;
+        }
 
         &--title {
             color: $white;
@@ -74,12 +117,31 @@
             font-weight: 400;
             line-height: 1.75rem;
             color: inherit;
+
+            @include breakpoint(tablet) {
+                padding: 0;
+                padding-right: 3rem;
+            }
+
+            @include breakpoint(desktop) {
+                padding: 0;
+                padding-right: 6rem;
+            }
         }
 
         &_social {
             display: flex;
             align-items: center;
             gap: 1.5rem;
+
+            @include breakpoint(tablet) {
+                align-items: flex-start;
+                justify-content: center;
+            }
+
+            @include breakpoint(tablet) {
+                justify-content: flex-end;
+            }
 
             &--img {
                 width: 1.5rem;
